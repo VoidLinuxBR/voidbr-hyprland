@@ -1,3 +1,3 @@
-# voidbr-pkgfile
+# voidbr-hyprland
 
-Template for VoidBR pkgmake/pkgfile packages
+VoidBR SWAY Meta Package
