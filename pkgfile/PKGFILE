@@ -23,6 +23,7 @@ depends=(
 	'hyprpicker>=0.4.7_3'
 	Waybar                  # Barra de status customizável para Wayland
 	wofi                    # Lançador de aplicativos e menu de busca
+	rofi
 	grim                    # Utilitário para captura de tela (screenshot)
 	mako
 	slurp                   # Seleção de área para captura de tela
