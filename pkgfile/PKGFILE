@@ -47,7 +47,7 @@ depends=(
 	wl-clipboard            # Ferramentas de clipboard (wl-copy/wl-paste)
 	brightnessctl           # Controle de brilho via linha de comando
 	playerctl               # MPRIS command-line controller and library
-	qview                   # Image viewer designed with minimalism and usability in mind
+	qView                   # Image viewer designed with minimalism and usability in mind
 	#
 	dbus                    # Message bus system
 	elogind                 # Gerenciador de login e sessões (seat management)
