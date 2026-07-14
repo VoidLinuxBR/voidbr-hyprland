@@ -95,7 +95,8 @@ depends=(
 	xfce4-terminal            # Modern terminal emulator primarly for the Xfce desktop environment
 	NetworkManager            # Gerenciador de rede (daemon)
 	network-manager-applet    # Ícone de bandeja para controlar conexões
-	#	voidbr-base-config      # Configuração base personalizada
+	voidbr-base-config        # Configuração base personalizada
+	voidbr-hyprland-config    # Configuração base personalizada
 	voidbr-wallpapers         # Wallpapers for Void Linux BR
 	voidbr-theme-dracula      # Tema visual Dracula aplicado
 	voidbr-tokyo-theme        # TokyoNight-Dark theme with icons, cursors, and wallpaper
