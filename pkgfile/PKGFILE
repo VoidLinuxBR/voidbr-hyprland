@@ -24,6 +24,8 @@ depends=(
 	hyprlauncher
 	hyprshot                # Utility to easily take screenshots in Hyprland using your mouse
   hyprsysteminfo          # A tiny qt6/qml application to display information about the running system
+  sddm                    # QML based X11 display manager
+  voidbr-sddm-themes      # sddm Themes for VoidLinuxBR
   weston                  # Reference implementation of a Wayland compositor
   #
   wlogout                 # Wayland based logout menu
