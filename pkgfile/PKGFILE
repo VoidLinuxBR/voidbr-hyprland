@@ -24,6 +24,7 @@ depends=(
 	hyprlauncher
 	hyprshot                # Utility to easily take screenshots in Hyprland using your mouse
   hyprsysteminfo          # A tiny qt6/qml application to display information about the running system
+  weston                  # Reference implementation of a Wayland compositor
   #
   wlogout                 # Wayland based logout menu
  	Waybar                  # Barra de status customizável para Wayland
