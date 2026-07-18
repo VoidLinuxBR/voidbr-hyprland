@@ -32,8 +32,11 @@ depends=(
  	Waybar                  # Barra de status customizável para Wayland
 	wofi                    # Lançador de aplicativos e menu de busca
 	#rofi                    # Window switcher, run dialog and dmenu replacement
-	qt5-wayland
-	qt6-wayland
+  sddm                   # QML based X11 display manager
+  voidbr-sddm-themes     # Sddm Themes for VoidLinuxBR
+  weston                 # Reference implementation of a Wayland compositor
+  qt5-wayland            # Cross-platform application and UI framework (QT5) - Wayland component
+  qt6-wayland            # Cross-platform application and UI framework - Wayland
 	xdg-desktop-portal-hyprland
 	xorg-server-xwayland
 	xdg-desktop-portal      # Camada de comunicação entre apps e o desktop
