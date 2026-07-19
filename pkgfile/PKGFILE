@@ -114,7 +114,8 @@ depends=(
 	xdg-user-dirs-gtk         # GTK+ tool to help manage user directories
 	xdg-user-dirs             # Tool to help manage user directories
 	acpi                      # Informations about ACPI devices (battery, thermal sensors and power)
-	acpid                     #ACPI Daemon (acpid) With Netlink Support
+	acpid                     # ACPI Daemon (acpid) With Netlink Support
+  htop                      # Interactive process viewer
 )
 
 package() {
