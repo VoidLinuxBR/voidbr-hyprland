@@ -104,8 +104,11 @@ depends=(
 	voidbr-base-config        # Configuração base personalizada
 	voidbr-hyprland-config    # Configuração base personalizada
 	voidbr-wallpapers         # Wallpapers for Void Linux BR
-	voidbr-theme-dracula      # Tema visual Dracula aplicado
 	voidbr-tokyo-theme        # TokyoNight-Dark theme with icons, cursors, and wallpaper
+  voidbr-dracula-theme      # Tema visual Dracula aplicado
+  voidbr-professional-theme
+  voidbr-xfwm-axiom-theme
+  voidbr-beauty-icons
 	firefox                   # Mozilla Firefox web browser
 	firefox-i18n-pt-BR        # Firefox Portuguese (Brazilian) language pack
 	# nerd-fonts              # Iconic font aggregator collection
