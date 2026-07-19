@@ -1,3 +1,3 @@
 # voidbr-hyprland
 
-VoidBR SWAY Meta Package
+VoidBR HYPERLAND Meta Package
