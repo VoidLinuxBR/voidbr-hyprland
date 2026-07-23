@@ -22,19 +22,16 @@ depends=(
 	hyprpaper
 	'hyprpicker>=0.4.7_3'
 	hyprlauncher
-	hyprshot                # Utility to easily take screenshots in Hyprland using your mouse
-  hyprsysteminfo          # A tiny qt6/qml application to display information about the running system
-  sddm                    # QML based X11 display manager
-  voidbr-sddm-themes      # sddm Themes for VoidLinuxBR
-  weston                  # Reference implementation of a Wayland compositor
-  #
-  wlogout                 # Wayland based logout menu
- 	Waybar                  # Barra de status customizável para Wayland
-	wofi                    # Lançador de aplicativos e menu de busca
-	#rofi                    # Window switcher, run dialog and dmenu replacement
+	hyprshot               # Utility to easily take screenshots in Hyprland using your mouse
+  hyprsysteminfo         # A tiny qt6/qml application to display information about the running system
   sddm                   # QML based X11 display manager
-  voidbr-sddm-themes     # Sddm Themes for VoidLinuxBR
+  voidbr-sddm-themes     # sddm Themes for VoidLinuxBR
   weston                 # Reference implementation of a Wayland compositor
+  #
+  wlogout                # Wayland based logout menu
+ 	Waybar                 # Barra de status customizável para Wayland
+	wofi                   # Lançador de aplicativos e menu de busca
+	#rofi                  # Window switcher, run dialog and dmenu replacement
   qt5-wayland            # Cross-platform application and UI framework (QT5) - Wayland component
   qt6-wayland            # Cross-platform application and UI framework - Wayland
 	xdg-desktop-portal-hyprland
@@ -105,22 +102,24 @@ depends=(
 	voidbr-hyprland-config    # Configuração base personalizada
 	voidbr-wallpapers         # Wallpapers for Void Linux BR
 	voidbr-tokyo-theme        # TokyoNight-Dark theme with icons, cursors, and wallpaper
-  voidbr-dracula-theme      # Tema visual Dracula aplicado
-  voidbr-professional-theme
-  voidbr-xfwm-axiom-theme
+# voidbr-dracula-theme      # Tema visual Dracula aplicado
+# voidbr-professional-theme
+# voidbr-xfwm-axiom-theme
   voidbr-beauty-icons
 	firefox                   # Mozilla Firefox web browser
 	firefox-i18n-pt-BR        # Firefox Portuguese (Brazilian) language pack
 	# nerd-fonts              # Iconic font aggregator collection
 	ttf-jetbrains-mono-nerd   # Patched font JetBrains Mono from nerd fonts library
 	lm_sensors                # Utilities to read temperature/voltage/fan sensors
-	xdg-user-dirs-gtk         # GTK+ tool to help manage user directories
-	xdg-user-dirs             # Tool to help manage user directories
 	acpi                      # Informations about ACPI devices (battery, thermal sensors and power)
 	acpid                     # ACPI Daemon (acpid) With Netlink Support
   htop                      # Interactive process viewer
   nwg-bar                   # GTK3-based button bar for wlroots-based compositors
   gnome-system-monitor      # Process viewer and system resource monitor for GNOME
+  kitty                     # Modern, hackable, featureful, OpenGL based terminal emulator
+  gnome-keyring             # GNOME password and secret manager
+  qt5ct                     # Qt5 Configuration Tool
+  qt6ct                     # Qt6 Configuration Tool
 )
 
 package() {
