@@ -119,6 +119,7 @@ depends=(
 	acpi                      # Informations about ACPI devices (battery, thermal sensors and power)
 	acpid                     # ACPI Daemon (acpid) With Netlink Support
   htop                      # Interactive process viewer
+  nwg-bar                   # GTK3-based button bar for wlroots-based compositors
 )
 
 package() {
