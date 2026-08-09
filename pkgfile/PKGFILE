@@ -38,7 +38,7 @@ depends=(
 	swappy                # Wayland native snapshot editing tool, inspired by Snappy on macOS
 	Thunar                # Gerenciador de arquivos (XFCE)
 	thunar-archive-plugin # Integração de compactação no Thunar
-	waybar                # Barra de status customizável para Wayland
+	Waybar                # Barra de status customizável para Wayland
 	wl-clipboard          # Ferramentas de clipboard (wl-copy/wl-paste)
 	wlogout               # Wayland based logout menu
 	wmenu                 # Menu de seleção estilo dmenu/wofi para Wayland
