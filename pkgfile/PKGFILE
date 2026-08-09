@@ -1,5 +1,4 @@
 # Maintainer: Vilmar Catafesta <vcatafesta@gmail.com>
-# Colaborator: Eduardo Charquero <eduardo.charquero@gmail.com>
 
 pkgname=voidbr-hyprland
 pkgdesc="VoidBR HYPRLAND Meta Package"
@@ -15,102 +14,35 @@ source=("git+${url}.git")
 md5sums=('SKIP')
 makedepends=()
 depends=(
-	acpi                        # Informations about ACPI devices (battery, thermal sensors and power)
-	acpid                       # ACPI Daemon (acpid) With Netlink Support
-	alsa-pipewire               # Compatibilidade ALSA sobre PipeWire
-	alsa-plugins-pulseaudio     # Plugin ALSA para redirecionar áudio ao PulseAudio/PipeWire
-	alsa-utils                  # Utilitários de linha de comando do ALSA
-	atril                       # Visualizador de documentos (PDFs)
-	brightnessctl               # Controle de brilho via linha de comando
-	cliphist                    # Histórico da área de transferência
-	cpupower                    # Ferramenta de gerenciamento de frequência da CPU
-	dbus                        # Message bus system
-	elogind                     # Gerenciador de login e sessões (seat management)
-	engrampa                    # Gerenciador de arquivos compactados
-	eom                         # Visualizador de imagens (Eye of MATE)
-	ffmpeg                      # Ferramentas para manipulação de áudio e vídeo
-	firefox                     # Mozilla Firefox web browser
-	firefox-i18n-pt-BR          # Firefox Portuguese (Brazilian) language pack
-	font-awesome                # Fontes de ícones para barras e interfaces
-	foot                        # Terminal leve e otimizado para Wayland
-	fuse-exfat                  # Suporte para montagem de sistemas exFAT
-	gnome-keyring               # GNOME password and secret manager
-	gnome-system-monitor        # Process viewer and system resource monitor for GNOME
-	grim                        # Utilitário para captura de tela (screenshot)
-	htop                        # Interactive process viewer
-	hyprcursor                  # Formato de cursor nativo do Hyprland
-	hypridle                    # Gerenciador de inatividade (idle) do Hyprland
-	hyprland                    # Compositor Wayland principal
-	hyprlauncher                # Lançador de aplicativos nativo do Hyprland
-	hyprlock                    # Bloqueador de tela nativo do Hyprland
-	hyprpaper                   # Wallpaper daemon para Hyprland
-	'hyprpicker>=0.4.7_3'       # Seletor de cores para Wayland
-	hyprshot                    # Utility to easily take screenshots in Hyprland using your mouse
-	hyprsysteminfo              # A tiny qt6/qml application to display information about the running system
-	jq                          # Processador de arquivos JSON via CLI
-	kanshi                      # Gerenciador dinâmico de monitores
-	kitty                       # Modern, hackable, featureful, OpenGL based terminal emulator
-	libjack-pipewire            # Compatibilidade JACK sobre PipeWire
-	libspa-bluetooth            # Suporte a Bluetooth para o PipeWire (SPA)
-	lm_sensors                  # Utilities to read temperature/voltage/fan sensors
-	lua55                       # Linguagem de script usada em configs do Hyprland/Waybar
-	mako                        # Servidor de notificações Wayland
-	mate-calc                   # Calculadora do ambiente MATE
-	mate-polkit                 # Agente de autenticação para permissões root
-	mesa-demos                  # Coleção de ferramentas de teste para o Mesa
-	mesa-dri                    # Drivers gráficos (Direct Rendering Infrastructure)
-	mesa-vaapi                  # Aceleração de vídeo via hardware (VA-API)
-	mpv                         # Video player based on MPlayer/mplayer2
-	network-manager-applet      # Ícone de bandeja para controlar conexões
-	NetworkManager              # Gerenciador de rede (daemon)
-	noto-fonts-emoji            # Fontes de emoji da Google (evita "tofu"/quadradinhos em apps)
-	noto-fonts-ttf              # Fontes Noto da Google
-	nwg-bar                     # GTK3-based button bar for wlroots-based compositors
-	nwg-launchers               # GTK-based launchers for window managers
-	nwg-look                    # Configurador de temas GTK para Wayland
-	optipng                     # Otimizador de compressão para arquivos PNG
-	pavucontrol                 # Volume control applet for Pipewire
-	pipewire                    # Servidor de áudio moderno
-	playerctl                   # MPRIS command-line controller and library
-	pluma                       # Editor de texto leve (MATE)
-	polkit-elogind              # Daemon de autorização de privilégios (necessário para o mate-polkit funcionar)
-	psmisc                      # Utilitários de processo (killall, fuser, pstree)
-	pulseaudio-utils            # Utilitários de linha de comando do PulseAudio
-	qt5-wayland                 # Cross-platform application and UI framework (QT5) - Wayland component
-	qt5ct                       # Qt5 Configuration Tool
-	qt6-wayland                 # Cross-platform application and UI framework - Wayland
-	qt6ct                       # Qt6 Configuration Tool
-	qView                       # Image viewer designed with minimalism and usability in mind
-	rtkit                       # Gerenciamento de prioridade de tempo real
-	sassc                       # Compilador CSS (SASS)
-	sddm                        # QML based X11 display manager
-	slurp                       # Seleção de área para captura de tela
-	swappy                      # Wayland native snapshot editing tool, inspired by Snappy on macOS
-	Thunar                      # Gerenciador de arquivos (XFCE)
-	thunar-archive-plugin       # Integração de compactação no Thunar
-	ttf-jetbrains-mono-nerd     # Patched font JetBrains Mono from nerd fonts library
-	ttf-ubuntu-font-family      # Ubuntu font family
-	voidbr-base-config          # Configuração base personalizada
-	voidbr-beauty-icons         # Tema de ícones VoidLinuxBR
-	voidbr-hyprland-config      # Configuração base personalizada
-	voidbr-sddm-themes          # sddm Themes for VoidLinuxBR
-	voidbr-tokyo-theme          # TokyoNight-Dark theme with icons, cursors, and wallpaper
-	voidbr-wallpapers           # Wallpapers for Void Linux BR
-	Waybar                      # Barra de status customizável para Wayland
-	weston                      # Reference implementation of a Wayland compositor
-	wireplumber                 # Gerenciador de sessão para PipeWire
-	wl-clipboard                # Ferramentas de clipboard (wl-copy/wl-paste)
-	wlogout                     # Wayland based logout menu
-	wmenu                       # Menu de seleção estilo dmenu/wofi para Wayland
-	wofi                        # Lançador de aplicativos e menu de busca
-	xdg-desktop-portal          # Camada de comunicação entre apps e o desktop
-	xdg-desktop-portal-gtk      # Implementação GTK do portal XDG
-	xdg-desktop-portal-hyprland # Implementação do portal XDG específica do Hyprland
-	xdg-user-dirs               # Tool to help manage user directories
-	xdg-user-dirs-gtk           # GTK+ tool to help manage user directories
-	xdg-utils                   # Ferramentas de integração com a área de trabalho
-	xfce4-terminal              # Modern terminal emulator primarly for the Xfce desktop environment
-	xorg-server-xwayland        # Compatibilidade com apps X11 legados dentro do Wayland
+	voidbr-base-common
+	voidbr-wayland-common
+	voidbr-gui-common
+	cliphist              # Histórico da área de transferência
+	engrampa              # Gerenciador de arquivos compactados
+	eom                   # Visualizador de imagens (Eye of MATE)
+	foot                  # Terminal leve e otimizado para Wayland
+	gnome-system-monitor  # Process viewer and system resource monitor for GNOME
+	grim                  # Utilitário para captura de tela (screenshot)
+	hyprcursor            # Formato de cursor nativo do Hyprland
+	hypridle              # Gerenciador de inatividade (idle) do Hyprland
+	hyprland              # Compositor Wayland principal
+	hyprlauncher          # Lançador de aplicativos nativo do Hyprland
+	hyprlock              # Bloqueador de tela nativo do Hyprland
+	hyprpaper             # Wallpaper daemon para Hyprland
+	'hyprpicker>=0.4.7_3' # Seletor de cores para Wayland
+	hyprshot              # Utility to easily take screenshots in Hyprland using your mouse
+	hyprsysteminfo        # A tiny qt6/qml application to display information about the running system
+	kanshi                # Gerenciador dinâmico de monitores
+	mako                  # Servidor de notificações Wayland
+	slurp                 # Seleção de área para captura de tela
+	swappy                # Wayland native snapshot editing tool, inspired by Snappy on macOS
+	Thunar                # Gerenciador de arquivos (XFCE)
+	thunar-archive-plugin # Integração de compactação no Thunar
+	waybar                # Barra de status customizável para Wayland
+	wl-clipboard          # Ferramentas de clipboard (wl-copy/wl-paste)
+	wlogout               # Wayland based logout menu
+	wmenu                 # Menu de seleção estilo dmenu/wofi para Wayland
+	wofi                  # Lançador de aplicativos e menu de busca
 )
 
 package() {
