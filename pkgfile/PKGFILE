@@ -43,6 +43,9 @@ depends=(
 	wlogout                   # Wayland based logout menu
 	wmenu                     # Menu de seleção estilo dmenu/wofi para Wayland
 	wofi                      # Lançador de aplicativos e menu de busca
+  nwg-bar                   # GTK3-based button bar for wlroots-based compositors
+  nwg-launchers             # GTK-based launchers for window managers
+  nwg-look                  # GTK settings editor adapted to work in the wlroots environment
   voidbr-hyprland-config    # Skel config for Void Linux HYPRLAND Meta Package
 )
 
