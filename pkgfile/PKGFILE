@@ -17,36 +17,36 @@ depends=(
 	voidbr-base-common
 	voidbr-wayland-common
 	voidbr-gui-common
-	cliphist                  # Histórico da área de transferência
-	engrampa                  # Gerenciador de arquivos compactados
-	eom                       # Visualizador de imagens (Eye of MATE)
-	foot                      # Terminal leve e otimizado para Wayland
-	gnome-system-monitor      # Process viewer and system resource monitor for GNOME
-	grim                      # Utilitário para captura de tela (screenshot)
-	hyprcursor                # Formato de cursor nativo do Hyprland
-	hypridle                  # Gerenciador de inatividade (idle) do Hyprland
-	hyprland                  # Compositor Wayland principal
-	hyprlauncher              # Lançador de aplicativos nativo do Hyprland
-	hyprlock                  # Bloqueador de tela nativo do Hyprland
-	hyprpaper                 # Wallpaper daemon para Hyprland
-	'hyprpicker>=0.4.7_3'     # Seletor de cores para Wayland
-	hyprshot                  # Utility to easily take screenshots in Hyprland using your mouse
-	hyprsysteminfo            # A tiny qt6/qml application to display information about the running system
-	kanshi                    # Gerenciador dinâmico de monitores
-	mako                      # Servidor de notificações Wayland
-	slurp                     # Seleção de área para captura de tela
-	swappy                    # Wayland native snapshot editing tool, inspired by Snappy on macOS
-	Thunar                    # Gerenciador de arquivos (XFCE)
-	thunar-archive-plugin     # Integração de compactação no Thunar
-	Waybar                    # Barra de status customizável para Wayland
-	wl-clipboard              # Ferramentas de clipboard (wl-copy/wl-paste)
-	wlogout                   # Wayland based logout menu
-	wmenu                     # Menu de seleção estilo dmenu/wofi para Wayland
-	wofi                      # Lançador de aplicativos e menu de busca
-  nwg-bar                   # GTK3-based button bar for wlroots-based compositors
-  nwg-launchers             # GTK-based launchers for window managers
-  nwg-look                  # GTK settings editor adapted to work in the wlroots environment
-  voidbr-hyprland-config    # Skel config for Void Linux HYPRLAND Meta Package
+	cliphist               # Histórico da área de transferência
+	engrampa               # Gerenciador de arquivos compactados
+	eom                    # Visualizador de imagens (Eye of MATE)
+	foot                   # Terminal leve e otimizado para Wayland
+	gnome-system-monitor   # Process viewer and system resource monitor for GNOME
+	grim                   # Utilitário para captura de tela (screenshot)
+	hyprcursor             # Formato de cursor nativo do Hyprland
+	hypridle               # Gerenciador de inatividade (idle) do Hyprland
+	hyprland               # Compositor Wayland principal
+	hyprlauncher           # Lançador de aplicativos nativo do Hyprland
+	hyprlock               # Bloqueador de tela nativo do Hyprland
+	hyprpaper              # Wallpaper daemon para Hyprland
+	'hyprpicker>=0.4.7_3'  # Seletor de cores para Wayland
+	hyprshot               # Utility to easily take screenshots in Hyprland using your mouse
+	hyprsysteminfo         # A tiny qt6/qml application to display information about the running system
+	kanshi                 # Gerenciador dinâmico de monitores
+	mako                   # Servidor de notificações Wayland
+	slurp                  # Seleção de área para captura de tela
+	swappy                 # Wayland native snapshot editing tool, inspired by Snappy on macOS
+	Thunar                 # Gerenciador de arquivos (XFCE)
+	thunar-archive-plugin  # Integração de compactação no Thunar
+	Waybar                 # Barra de status customizável para Wayland
+	wl-clipboard           # Ferramentas de clipboard (wl-copy/wl-paste)
+	wlogout                # Wayland based logout menu
+	wmenu                  # Menu de seleção estilo dmenu/wofi para Wayland
+	wofi                   # Lançador de aplicativos e menu de busca
+	nwg-bar                # GTK3-based button bar for wlroots-based compositors
+	nwg-launchers          # GTK-based launchers for window managers
+	nwg-look               # GTK settings editor adapted to work in the wlroots environment
+	voidbr-hyprland-config # Skel config for Void Linux HYPRLAND Meta Package
 )
 
 package() {
@@ -81,18 +81,17 @@ pre_install() {
 	log "Iniciando instalação"
 }
 
-
 post_install() {
-  log "Aplicando configuracoes para $user"
-  # cd $user_home
-  # cp -Rpa /etc/skel/. .
-  # chown $user:$user . -R
-  voidbr-copy-skel-inc --user $user --force --quiet
+	if [ -n "$user" ]; then
+		log "Aplicando configuracoes para $user"
+		voidbr-copy-skel-inc --user "$user" --force --quiet
+	fi
 
 	log "Ativando serviços"
-  vservice add sddm --quiet
+	vservice add sddm --quiet
 
-  log "Finalizando instalação"
+	log "Finalizando instalação"
+	log "${YELLOW}Instalação completa. Reinicie o sistema...${RESET}"
 }
 
 pre_upgrade() {
